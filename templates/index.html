@@ -3,34 +3,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
 integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> </head> <body style="background-color:black"> 
     
-    <script type="text/javascript">
-    (function(d, m){
-
-    /*---------------- Kommunicate settings start ----------------*/
-
-     var kommunicateSettings = {
-      "appId": "<APP_ID>",  
-      "automaticChatOpenOnNavigation": true,
-      "popupWidget": true
-      /*
-      "onInit": function (){
-        // paste your code here
-      }
-      */
-      };
-
-    /*----------------- Kommunicate settings end ------------------*/
-
-     var s = document.createElement("script");
-      s.type = "text/javascript";
-      s.async = true;
-      s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
-      var h = document.getElementsByTagName("head")[0];
-      h.appendChild(s);
-      window.kommunicate = m;
-      m._globals = kommunicateSettings;
-    })(document, window.kommunicate || {});
-</script>
+   
     
     
     <div id="maintext" 
@@ -42,5 +15,22 @@ style="position:absolute; margin:auto; width:700px; height:200px; text-align:cen
         <input type=file name=file>
         <input type=submit value=Upload>
      </p>
-  </form> </div> </body>
+  </form> </div> 
+    
+    
+    
+   <script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings = 
+            {"appId":"162669156548a7b84c9e1cf7d489afe3f","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script> 
+    
+    
+    </body>
 </html>
